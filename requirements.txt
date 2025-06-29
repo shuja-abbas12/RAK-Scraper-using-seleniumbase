@@ -1,0 +1,13 @@
+# Core browser automation ― Selenium 4+ now bundles Selenium-Manager,
+# so no external driver-manager package is required.
+selenium>=4.21.0
+
+# HTML parsing / optional table-to-JSON helpers
+beautifulsoup4>=4.12.3
+lxml>=5.2.1
+pandas>=2.2.2          # convenient but not strictly necessary
+
+# UI layer we’ll bolt on later
+# 4.19.2 is the last release tested against Python 3.8-3.12 on most
+# servers; anything <5.0 keeps today’s API stable.
+gradio>=4.19.2,<5.0
